@@ -1,0 +1,52 @@
+fact_trips columns are:
+1. trip_id
+2. date
+3. city_id
+4. passenger_type
+5. distance_travelled(km)
+6. fare_amount
+7. passenger_rating
+8. driver_rating
+
+425,903 rows × 8 columns for fact_trips.
+
+Yes — **fare prediction** and **passenger-type prediction** are *real, practical problems* used in apps like ride-hailing platforms.
+
+They help with:
+
+* **Dynamic pricing** (predicting fare based on distance, demand, etc.)
+* **Customer segmentation** (predicting new vs repeat passenger)
+* **Personalized offers**
+* **Demand forecasting**
+* **Driver allocation**
+
+So yes — your projects reflect **actual real-world use cases** in Uber/Ola-type systems.
+
+also, especially for fare prediction:
+Fare prediction solves **multiple real business problems**, such as:
+
+* **Dynamic pricing** → adjust fares based on demand, distance, time.
+* **Transparent pricing** → show users an accurate upfront fare.
+* **Fraud detection** → detect abnormally high or low fare patterns.
+* **Route optimization** → recommend cheaper or faster routes.
+* **Driver earnings forecasting** → estimate income per trip.
+* **User trust & conversion** → accurate fare estimates increase ride bookings.
+
+So it’s not just prediction — it supports **pricing strategy, operations, and user experience**.
+
+
+
+If you build a high-quality fare prediction model, it becomes useful because the business can plug it directly into real products:
+
+So what is your value as a data scientist?
+
+You build the algorithm that powers pricing—one of the most important systems in mobility companies (Uber, Ola, Lyft).
+
+TL;DR
+
+A good fare prediction model becomes:
+a product feature + a pricing engine + a fraud detector + a forecasting tool.
+
+That’s why it’s extremely useful.
+
+and, Building the fare prediction model in a notebook is exactly what your team expects from you, but turning it into a real product usually involves ML engineers, data engineers, platform teams, etc.
