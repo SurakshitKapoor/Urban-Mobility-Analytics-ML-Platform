@@ -17,3 +17,14 @@ class CustomException(Exception):
 
     def __str__(self):
         return self.error_message
+
+
+# code to test this exception code
+if __name__=="__main__":
+    print("App started from exception.py")
+
+    try:
+        ans = 12/0
+        print(ans)
+    except Exception as e:
+        raise CustomException(e, sys)
