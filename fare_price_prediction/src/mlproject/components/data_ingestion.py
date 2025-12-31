@@ -40,7 +40,11 @@ class DataIngestion:
             print("fact_df shape: ", fact_df.shape)
             logging.info("tables are merged successfully!")
 
+            # ADD THIS LINE FOR QUICK TESTING
+            fact_df = fact_df.sample(n=5000, random_state=42)
+            logging.info(f"Data shape after sampling: {fact_df.shape}")
 
+            
             # create artifacts folder 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
 
