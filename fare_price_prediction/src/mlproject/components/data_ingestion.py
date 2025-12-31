@@ -12,6 +12,7 @@ class DataIngestionConfig:
     test_data_path:str = os.path.join("artifacts", "test.csv")
     raw_data_path : str = os.path.join("artifacts", "raw.csv")
 
+    
 
 class DataIngestion:
     def __init__(self):
@@ -44,7 +45,7 @@ class DataIngestion:
             fact_df = fact_df.sample(n=5000, random_state=42)
             logging.info(f"Data shape after sampling: {fact_df.shape}")
 
-            
+
             # create artifacts folder 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
 

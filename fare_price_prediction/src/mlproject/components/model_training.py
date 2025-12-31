@@ -16,7 +16,9 @@ from src.mlproject.utils import evaluate_model, save_object
 
 
 class ModelTrainerConfig:
-    trained_model_path = os.path.join("artifacts", "model.pkl")
+    # trained_model_path = os.path.join("artifacts", "model.pkl")
+    trained_model_path = os.path.join("artifacts", "model_dev.pkl")   # testing
+    # trained_model_path = os.path.join("artifacts", "model_prod.pkl")  # full data
 
 
 class ModelTrainer:
