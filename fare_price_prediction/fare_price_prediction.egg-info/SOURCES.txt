@@ -1,6 +1,8 @@
 setup.py
+data/__init__.py
 fare_price_prediction.egg-info/PKG-INFO
 fare_price_prediction.egg-info/SOURCES.txt
 fare_price_prediction.egg-info/dependency_links.txt
 fare_price_prediction.egg-info/requires.txt
 fare_price_prediction.egg-info/top_level.txt
+templates/__init__.py

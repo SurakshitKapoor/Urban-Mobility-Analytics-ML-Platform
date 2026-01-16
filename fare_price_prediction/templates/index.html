@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fare Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="container">
+    <h1>🚕 Fare Price Prediction</h1>
+
+    <form method="POST">
+
+        <label>Passenger Type</label>
+        <select name="passenger_type" required>
+            <option value="new">New</option>
+            <option value="repeat">Repeat</option>
+        </select>
+
+        <label>Distance (km)</label>
+        <input type="number" step="0.1" name="distance_km" required>
+
+        <label>City</label>
+        <select name="city_name" required>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+        </select>
+
+        <label>Day Category</label>
+        <select name="day_category" required>
+            <option value="Weekday">Weekday</option>
+            <option value="Weekend">Weekend</option>
+        </select>
+
+        <label>Day</label>
+        <input type="number" name="day" required>
+
+        <label>Weekday (0=Mon)</label>
+        <input type="number" name="weekday" required>
+
+        <label>Week</label>
+        <input type="number" name="week" required>
+
+        <label>Month</label>
+        <input type="number" name="month_num" required>
+
+        <button type="submit">Predict Fare</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            <h2>💰 Predicted Fare: {{ prediction }}</h2>
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>
